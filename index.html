@@ -26,7 +26,14 @@
     line-height: 1.6;
     background: var(--bg-1);
   }
-  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+  
+.wrap {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
   header.nav { background: #fff; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }
   header.nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 56px; }
   .brand { font-weight: 700; letter-spacing: 0.06em; font-size: 0.85rem; text-transform: uppercase; }
@@ -44,7 +51,14 @@
   section.block { padding: 64px 0; }
   section.alt { background: var(--bg-2); }
   section.block h2 { margin: 0 0 12px; font-size: 1.5rem; }
-  section.block p.intro { max-width: 62ch; color: var(--muted); margin: 0 0 28px; }
+  
+section.block p.intro {
+  max-width: none;
+  width: 100%;
+  color: var(--muted);
+  margin: 0 0 28px;
+}
+
 
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 20px; }
@@ -56,7 +70,13 @@
 
   .connect { background: var(--navy); color: #fff; padding: 56px 0; }
   .connect h2 { margin: 0 0 12px; font-size: 1.5rem; }
-  .connect p { margin: 0 0 16px; color: #e4ebf7; max-width: 60ch; }
+ 
+.connect p {
+  margin: 0 0 16px;
+  color: #e4ebf7;
+  max-width: none;
+}
+
   .connect a { color: #cfe0ff; margin-right: 18px; }
   footer { background: var(--navy); color: #b9c6dc; font-size: 0.82rem; padding: 0 0 32px; }
   footer .wrap { border-top: 1px solid #2b3d5c; padding-top: 18px; }
@@ -66,6 +86,40 @@
     .hero { padding: 48px 0 56px; }
   }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  /* Responsive page margins */
+  @media (max-width: 768px) {
+    .wrap {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .wrap {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    header.nav .wrap {
+      height: auto;
+      min-height: 56px;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+    nav a {
+      margin-left: 0;
+      margin-right: 12px;
+    }
+  }
+</style>
+</head>
+<body>
 </style>
 </head>
 <body>
