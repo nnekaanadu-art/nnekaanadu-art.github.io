@@ -6,21 +6,27 @@ I am a product owner with experience in financial services and insurance. My wor
 
 **Contact Centre Agent Assist Prototype**
 
-An independent concept showing how AI could help contact centre agents during a call. It produces a conversation summary, identifies customer intent, flags complaints and vulnerable customers, and suggests a next best action. Results are checked against a sample answer key. Built with Claude, Gemini, Google Colab, and Google Sheets.
+An independent concept showing how AI could help contact centre agents after a call. It produces a conversation summary, identifies customer intent, flags complaints and vulnerable customers, and suggests a next best action. Results are checked against a sample answer key, and the prototype matched it on 19 of 20 test calls. Built with Claude, Gemini, Google Colab, and Google Sheets.
 
-*Repository and demo coming soon.*
+[View GitHub Repository](https://github.com/nnekaanadu-art/contact-centre-agent-assist)
+
+[Read the PRD](https://github.com/nnekaanadu-art/contact-centre-agent-assist/blob/main/docs/PRD.md)
 
 **Product Prioritization and Roadmap Tool**
 
 Helps product teams decide what to build next, with prioritization frameworks, roadmap planning, and capacity management.
 
-*Repository and live demo coming soon.*
+[Try Interactive Prototype](https://nnekaanadu-art.github.io/product-prioritization-tool/)
+
+[View GitHub Repository](https://github.com/nnekaanadu-art/product-prioritization-tool)
 
 **Mortgage Payment Calculator**
 
 Helps buyers compare Canadian and US mortgage options, with amortization schedules and payment scenarios. For illustration only. Not financial advice.
 
-*Repository and live demo coming soon.*
+[Try Interactive Prototype](https://nnekaanadu-art.github.io/mortgage-payment-calculator/)
+
+[View GitHub Repository](https://github.com/nnekaanadu-art/mortgage-payment-calculator)
 
 **BusinessLedger**
 
