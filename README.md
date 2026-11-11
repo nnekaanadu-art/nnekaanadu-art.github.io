@@ -20,6 +20,12 @@ Helps product teams decide what to build next, with prioritization frameworks, r
 
 [View GitHub Repository](https://github.com/nnekaanadu-art/product-prioritization-tool)
 
+**Value Ledger: Benefits Realization Tracker**
+
+Helps product and project leaders track whether delivered work produces the value it promised, with quarterly plan versus actual tracking, ROI, net present value, payback, and a one-page executive brief.
+
+*Coming soon*
+
 **Mortgage Payment Calculator**
 
 Helps buyers compare Canadian and US mortgage options, with amortization schedules and payment scenarios. For illustration only. Not financial advice.
@@ -32,7 +38,7 @@ Helps buyers compare Canadian and US mortgage options, with amortization schedul
 
 A business management prototype that explores ways to simplify business operations and give owners clearer visibility into their business information.
 
-*Repository and live demo coming soon.*
+*Coming soon*
 
 All prototypes use fictional sample data, and the contact centre prototype uses synthetic conversations only. Case studies are anonymized.
 
