@@ -22,9 +22,11 @@ Helps product teams decide what to build next, with prioritization frameworks, r
 
 **Value Ledger: Benefits Realization Tracker**
 
-Helps product and project leaders track whether delivered work produces the value it promised, with quarterly plan versus actual tracking, ROI, net present value, payback, and a one-page executive brief.
+Helps product and project leaders track whether delivered work produces the value it promised, with monthly and quarterly plan versus actual tracking, ROI and net financial value, and a one-page executive brief.
 
-*Coming soon*
+[Try Interactive Prototype](https://nnekaanadu-art.github.io/value-ledger/)
+
+[View GitHub Repository](https://github.com/nnekaanadu-art/value-ledger)
 
 **Mortgage Payment Calculator**
 
