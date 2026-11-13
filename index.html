@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nneka Anadu | AI Learning Portfolio</title>
-<meta name="description" content="My portfolio of hands-on AI-assisted prototypes and what each one taught me.">
+<title>Nneka Anadu | AI and Automation Portfolio</title>
+<meta name="description" content="Prototypes and ideas showing how I use AI and automation day to day.">
 <style>
   :root {
     --navy: #14243d;
@@ -26,13 +26,13 @@
     line-height: 1.6;
     background: var(--bg-1);
   }
-  
-.wrap {
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0 48px;
-}
+
+  .wrap {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 48px;
+  }
 
   header.nav { background: #fff; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }
   header.nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 56px; }
@@ -41,57 +41,55 @@
   nav a:hover, nav a:focus-visible { text-decoration: underline; }
   a:focus-visible, .btn:focus-visible { outline: 3px solid #9cc0ff; outline-offset: 2px; }
 
-        .hero { background: var(--navy); color: #fff; padding: 28px 0 32px; }
+  .hero { background: var(--navy); color: #fff; padding: 28px 0 32px; }
   .hero .label { color: #9cc0ff; font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; margin: 0 0 16px; }
-  
-.hero h1 {
-  font-size: clamp(2rem, 5vw, 3.2rem);
-  line-height: 1.12;
-  margin: 0 0 20px;
-  max-width: 100%;
-}
 
-  
-.hero p.lead {
-  max-width: 100%;
-  color: #e4ebf7;
-  margin: 0 0 28px;
-}
+  .hero h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    line-height: 1.12;
+    margin: 0 0 20px;
+    max-width: 100%;
+  }
+
+  .hero p.lead {
+    max-width: 100%;
+    color: #e4ebf7;
+    margin: 0 0 28px;
+  }
 
   .btn { display: inline-block; background: var(--blue); color: #fff; padding: 11px 20px; border-radius: 6px; font-weight: 600; font-size: 0.9rem; text-decoration: none; }
   .btn:hover { background: var(--blue-dark); }
 
-    section.block { padding: 24px 0; }
+  section.block { padding: 24px 0; }
   section.alt { background: var(--bg-2); }
   section.block h2 { margin: 0 0 12px; font-size: 1.5rem; }
-  
-section.block p.intro {
-  max-width: none;
-  width: 100%;
-  color: var(--muted);
-  margin: 0 0 18px;
-}
 
+  section.block p.intro {
+    max-width: none;
+    width: 100%;
+    color: var(--muted);
+    margin: 0 0 18px;
+  }
 
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 20px; }
   .card h3 { margin: 0 0 8px; font-size: 1rem; }
   .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
   .card .tag { display: block; color: var(--blue-dark); font-weight: 700; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px; }
-    .card .status { margin-top: 14px; font-size: 0.88rem; color: var(--ink); font-weight: 600; }
+  .card .status { margin-top: 14px; font-size: 0.88rem; color: var(--ink); font-weight: 600; }
   .card .links { margin-top: 8px; }
-   .card .links a { display: block; margin-top: 6px; color: var(--blue); font-weight: 600; }
+  .card .links a { display: block; margin-top: 6px; color: var(--blue); font-weight: 600; }
   .card .links a:visited { color: var(--blue); }
   .note { margin-top: 24px; font-size: 0.9rem; color: var(--muted); max-width: 70ch; }
 
-    .connect { background: var(--navy); color: #fff; padding: 24px 0 8px; }
+  .connect { background: var(--navy); color: #fff; padding: 24px 0 8px; }
   .connect h2 { margin: 0 0 12px; font-size: 1.5rem; }
- 
-.connect p {
-  margin: 0 0 16px;
-  color: #e4ebf7;
-  max-width: none;
-}
+
+  .connect p {
+    margin: 0 0 16px;
+    color: #e4ebf7;
+    max-width: none;
+  }
 
   .connect a { color: #cfe0ff; margin-right: 18px; }
   footer { background: var(--navy); color: #b9c6dc; font-size: 0.82rem; padding: 0 0 32px; }
@@ -99,10 +97,9 @@ section.block p.intro {
 
   @media (max-width: 560px) {
     nav a { margin-left: 12px; font-size: 0.82rem; }
-      .hero { padding: 32px 0 36px; }
+    .hero { padding: 32px 0 36px; }
   }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-
 
   /* Responsive page margins */
   @media (max-width: 768px) {
@@ -142,7 +139,7 @@ section.block p.intro {
     <nav aria-label="Main">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
-      <a href="#learning">Learning</a>
+      <a href="#in-progress">In Progress</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -151,17 +148,17 @@ section.block p.intro {
 <main>
   <section class="hero">
     <div class="wrap">
-      <p class="label">AI Prototyping • Hands-On Learning</p>
-      <h1>Increasing my AI literacy one prototype at a time.</h1>
-           <p class="lead">My name is Nneka Anadu, and I am building my AI skills by doing. Each prototype below is a hands-on project that taught me something new about how AI products are designed, built, and tested.</p>
+      <p class="label">AI Prototyping • Automation • Practical Ideas</p>
+      <h1>Putting AI and automation to work.</h1>
+      <p class="lead">My name is Nneka Anadu. I use AI and automation every day to research, plan, and build. This site showcases prototypes I have built and ideas for how they apply to real work.</p>
       <a class="btn" href="#projects">Explore My Projects</a>
     </div>
   </section>
 
   <section class="block" id="about">
     <div class="wrap">
-      <h2>About Me</h2>
-      <p class="intro">I learn best by building. I start with a real problem, define what a tool should do, use AI tools to build it, and test the results until it works the way it should.</p>
+      <h2>How I Work</h2>
+      <p class="intro">I start with a real problem, define what a solution should do, build it with AI tools, and test it until the results hold up.</p>
       <div class="grid">
         <div class="card">
           <h3>Start with a Problem</h3>
@@ -172,8 +169,12 @@ section.block p.intro {
           <p>I use tools like ChatGPT, Claude, Gemini, and Google Colab to turn requirements into working prototypes.</p>
         </div>
         <div class="card">
-          <h3>Test and Learn</h3>
-          <p>I check the results, find where AI gets things wrong, and improve each version.</p>
+          <h3>Test and Improve</h3>
+          <p>I check results against clear criteria, catch where AI gets things wrong, and refine each version.</p>
+        </div>
+        <div class="card">
+          <h3>Automate the Routine</h3>
+          <p>I use tools like n8n, Make, and Zapier to connect apps and remove repetitive steps.</p>
         </div>
       </div>
     </div>
@@ -182,115 +183,9 @@ section.block p.intro {
   <section class="block alt" id="projects">
     <div class="wrap">
       <h2>Interactive Prototypes</h2>
-      <p class="intro">Hands-on learning projects. For each one, I wrote the requirements, directed AI tools (ChatGPT, Claude, Gemini, and Google Colab) to build it, and tested the results. These are independent personal projects and are not affiliated with any employer. All prototypes use fictional sample data, and the contact centre prototype uses synthetic conversations only.</p>
+      <p class="intro">Prototypes I designed and built with AI tools (ChatGPT, Claude, Gemini, and Google Colab). For each one, I defined the requirements, directed the build, and tested the results. These are independent personal projects and are not affiliated with any employer. All prototypes use fictional sample data, and the contact centre prototype uses synthetic conversations only.</p>
       <div class="grid">
         <div class="card">
           <span class="tag">AI and customer service</span>
           <h3>Contact Centre Agent Assist Prototype</h3>
-                    <p>An independent concept showing how AI could help contact centre agents after a call. It produces a conversation summary, identifies customer intent, flags complaints and vulnerable customers, and suggests a next best action. Results are checked against a sample answer key, and the prototype matched it on 19 of 20 test calls. Built with Claude, Gemini, Google Colab, and Google Sheets.</p>
-          <p><strong>What I learned:</strong> how to test AI output against an answer key and refine my prompts until the results improved.</p>
-          <p class="status">Working prototype with evaluation results</p>
-          <p class="links">
-            <a href="https://github.com/nnekaanadu-art/contact-centre-agent-assist"
-               target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
-            <a href="https://github.com/nnekaanadu-art/contact-centre-agent-assist/blob/main/docs/PRD.md"
-               target="_blank" rel="noopener noreferrer">Read the PRD</a>
-          </p>
-        </div>
-        
-<div class="card">
-  <span class="tag">Product operations</span>
-  <h3>Northstar: Product Prioritization and Roadmap Tool</h3>
-  <p>
-   A tool that helps product teams decide what to build first. It ranks initiatives using three scoring methods (weighted value, RICE, and WSJF), lays out a quarterly roadmap, checks plans against team capacity, compares scenarios, and produces an executive summary.
-  </p>
-  <p><strong>What I learned:</strong> how to turn a product idea into a working tool through clear prompts and step-by-step testing.</p>
-  <p class="status">Interactive prototype available</p>
-    <p class="links">
-    <a href="https://nnekaanadu-art.github.io/product-prioritization-tool/"
-       target="_blank" rel="noopener noreferrer">Try Interactive Prototype</a>
-    <a href="https://github.com/nnekaanadu-art/product-prioritization-tool"
-       target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
-  </p>
-</div>
-        <div class="card">
-          <span class="tag">Value realization</span>
-          <h3>Value Ledger: Benefits Realization Tracker</h3>
-          <p>Helps product and project leaders track whether delivered work produces the value it promised. It records initiatives and their expected benefits, compares planned and actual results by month and by quarter, tracks net financial value against program costs, and produces a one-page executive brief.</p>
-         <p><strong>What I learned:</strong> how to publish a project to GitHub using Claude Code.</p>
-          <p class="status">Interactive prototype available</p>
-          <p class="links">
-            <a href="https://nnekaanadu-art.github.io/value-ledger/"
-               target="_blank" rel="noopener noreferrer">Try Interactive Prototype</a>
-            <a href="https://github.com/nnekaanadu-art/value-ledger"
-               target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
-          </p>
-        </div>
-        <div class="card">
-          <span class="tag">Financial tools</span>
-          <h3>Mortgage Lab: Mortgage Payment Calculator</h3>
-          <p>Helps buyers estimate Canadian and US mortgage payments, compare two scenarios side by side, view amortization schedules, and estimate first-time buyer incentives in Ontario and British Columbia. For illustration only. Not financial advice.</p>
-<p><strong>What I learned:</strong> that AI can produce calculations that look right but are not, and how to check AI-generated formulas against trusted sources before relying on them.</p>
-          
-<p class="status">Interactive prototype available</p>
-<p class="links">
-  <a href="https://nnekaanadu-art.github.io/mortgage-payment-calculator/"
-     target="_blank" rel="noopener noreferrer">Try Interactive Prototype</a>
-  <a href="https://github.com/nnekaanadu-art/mortgage-payment-calculator"
-     target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
-</p>
-
-        </div>
-        <div class="card">
-          <span class="tag">Business operations</span>
-          <h3>BusinessLedger: Sales and Expense Tracker</h3>
-          <p>A simple bookkeeping tool for small business owners. It records income and expenses, breaks down income by business activity and payment method, and reports on monthly revenue trends and which activities are most profitable.</p>
-          <p class="status">Coming soon</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-  
-    <section class="block" id="learning">
-    <div class="wrap">
-      <h2>Currently Learning</h2>
-      <p class="intro">What I am exploring next, one hands-on project at a time.</p>
-      <div class="grid">
-        <div class="card">
-          <h3>Retrieval-Augmented Generation (RAG)</h3>
-          <p>Built a grounded research assistant in NotebookLM. Next, building a RAG tool to share in this portfolio.</p>
-        </div>
-        <div class="card">
-          <h3>My First AI Agent</h3>
-          <p>A job-matching workflow in n8n, with human approval before anything is sent.</p>
-        </div>
-        <div class="card">
-          <h3>Multi-Agent Pipelines</h3>
-          <p>Connecting several AI agents in Google Colab so each one handles a different step.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section class="connect" id="contact">
-    <div class="wrap">
-      <h2>Let's Connect</h2>
-      <p>Interested in the ideas behind these prototypes, or in comparing notes on learning AI? I would love to connect.</p>
-      <p>
-        <a href="https://www.linkedin.com/in/NnekaAnadu" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/nnekaanadu-art" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </p>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap">
-    © 2026 Nneka Anadu
-  </div>
-</footer>
-
-</body>
-</html>
+          <p>An independent concept showing how AI could help contact centre agents after a call. It produces a conversation summary, identifies customer intent, flags complaints and vulnerable customers, and suggests a next best action. Results are checked against a sample answer key, and the prototype matched it on 19 of 20 test calls. Built with Claude, Gemini, Google Colab, and Google Sheets.</p>
