@@ -72,6 +72,16 @@
   }
 
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
+
+  /* Project cards: 4 per row on desktop, 2 on tablets, 1 on phones (order is always kept) */
+  .grid.projects-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  @media (max-width: 1100px) {
+    .grid.projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 640px) {
+    .grid.projects-grid { grid-template-columns: 1fr; }
+  }
+
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 20px; }
   .card h3 { margin: 0 0 8px; font-size: 1rem; }
   .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
@@ -184,21 +194,24 @@
     <div class="wrap">
       <h2>Interactive Prototypes</h2>
       <p class="intro">Prototypes I designed and built with AI tools (ChatGPT, Claude, Gemini, and Google Colab). For each one, I defined the requirements, directed the build, and tested the results. These are independent personal projects and are not affiliated with any employer. All prototypes use fictional sample data, and the contact centre prototype uses synthetic conversations only.</p>
-      <div class="grid">
+      <div class="grid projects-grid">
+
+        <!-- Row 1, card 1: AI Story Studio -->
         <div class="card">
-          <span class="tag">AI and customer service</span>
-          <h3>Contact Centre Agent Assist Prototype</h3>
-          <p>An independent concept showing how AI could help contact centre agents after a call. It produces a conversation summary, identifies customer intent, flags complaints and vulnerable customers, and suggests a next best action. Results are checked against a sample answer key, and the prototype matched it on 19 of 20 test calls. Built with Claude, Gemini, Google Colab, and Google Sheets.</p>
-          <p><strong>Where this applies:</strong> contact centres that want faster after-call work and consistent flagging of complaints and vulnerable customers, with accuracy measured before rollout.</p>
-          <p class="status">Working prototype with evaluation results</p>
+          <span class="tag">Product delivery</span>
+          <h3>AI Story Studio: User Story Drafting and Review</h3>
+          <p>Shows how AI can speed up user story writing while people stay in control of quality. It turns a business need into a draft user story, acceptance criteria, and open questions, then guides a human review against the INVEST principles and a Definition of Ready. It also suggests separately scoped follow-up stories and summarizes progress in an executive brief. Story generation is simulated, so the prototype runs anywhere without setup.</p>
+          <p><strong>Where this applies:</strong> backlog refinement, when teams want faster first drafts without skipping the review that makes a story ready for development.</p>
+          <p class="status">Interactive prototype available</p>
           <p class="links">
-            <a href="https://github.com/nnekaanadu-art/contact-centre-agent-assist"
+            <a href="https://nnekaanadu-art.github.io/ai-story-studio/"
+               target="_blank" rel="noopener noreferrer">Try Interactive Prototype</a>
+            <a href="https://github.com/nnekaanadu-art/ai-story-studio"
                target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
-            <a href="https://github.com/nnekaanadu-art/contact-centre-agent-assist/blob/main/docs/PRD.md"
-               target="_blank" rel="noopener noreferrer">Read the PRD</a>
           </p>
         </div>
 
+        <!-- Row 1, card 2: Northstar -->
         <div class="card">
           <span class="tag">Product operations</span>
           <h3>Northstar: Product Prioritization and Roadmap Tool</h3>
@@ -213,6 +226,7 @@
           </p>
         </div>
 
+        <!-- Row 1, card 3: Value Ledger -->
         <div class="card">
           <span class="tag">Value realization</span>
           <h3>Value Ledger: Benefits Realization Tracker</h3>
@@ -227,6 +241,22 @@
           </p>
         </div>
 
+        <!-- Row 1, card 4: Contact Centre Agent Assist -->
+        <div class="card">
+          <span class="tag">AI and customer service</span>
+          <h3>Contact Centre Agent Assist Prototype</h3>
+          <p>An independent concept showing how AI could help contact centre agents after a call. It produces a conversation summary, identifies customer intent, flags complaints and vulnerable customers, and suggests a next best action. Results are checked against a sample answer key, and the prototype matched it on 19 of 20 test calls. Built with Claude, Gemini, Google Colab, and Google Sheets.</p>
+          <p><strong>Where this applies:</strong> contact centres that want faster after-call work and consistent flagging of complaints and vulnerable customers, with accuracy measured before rollout.</p>
+          <p class="status">Working prototype with evaluation results</p>
+          <p class="links">
+            <a href="https://github.com/nnekaanadu-art/contact-centre-agent-assist"
+               target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
+            <a href="https://github.com/nnekaanadu-art/contact-centre-agent-assist/blob/main/docs/PRD.md"
+               target="_blank" rel="noopener noreferrer">Read the PRD</a>
+          </p>
+        </div>
+
+        <!-- Row 2, card 1: Mortgage Lab -->
         <div class="card">
           <span class="tag">Financial tools</span>
           <h3>Mortgage Lab: Mortgage Payment Calculator</h3>
@@ -241,12 +271,14 @@
           </p>
         </div>
 
+        <!-- Row 2, card 2: BusinessLedger -->
         <div class="card">
           <span class="tag">Business operations</span>
           <h3>BusinessLedger: Sales and Expense Tracker</h3>
           <p>A simple bookkeeping tool for small business owners. It records income and expenses, breaks down income by business activity and payment method, and reports on monthly revenue trends and which activities are most profitable.</p>
           <p class="status">Coming soon</p>
         </div>
+
       </div>
     </div>
   </section>
