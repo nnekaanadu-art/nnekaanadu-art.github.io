@@ -1,57 +1,19 @@
-# Nneka Anadu | Product & Platform Leadership | Digital Transformation & AI-Assisted Prototyping
+# Nneka Anadu | AI and Automation Portfolio
 
-I am a product owner with experience in financial services and insurance. My work focuses on digital platforms, contact centre technology, and data. This portfolio shows how I approach prioritization, problem solving, and delivery through interactive prototypes, built with AI-assisted tools such as ChatGPT, Claude, and Gemini, and selected case studies.
+Prototypes and ideas showing how I use AI and automation day to day and in real work scenarios.
 
-## Featured Projects
+**[Visit the full portfolio](https://nnekaanadu-art.github.io/)**
 
-**Contact Centre Agent Assist Prototype**
+## Prototypes
 
-An independent concept showing how AI could help contact centre agents after a call. It produces a conversation summary, identifies customer intent, flags complaints and vulnerable customers, and suggests a next best action. Results are checked against a sample answer key, and the prototype matched it on 19 of 20 test calls. Built with Claude, Gemini, Google Colab, and Google Sheets.
+- **Contact Centre Agent Assist:** AI after-call summaries, intent detection, and risk flags, tested against an answer key. [Repository](https://github.com/nnekaanadu-art/contact-centre-agent-assist) | [PRD](https://github.com/nnekaanadu-art/contact-centre-agent-assist/blob/main/docs/PRD.md)
+- **Northstar:** Product prioritization and roadmap planning. [Try it](https://nnekaanadu-art.github.io/product-prioritization-tool/) | [Repository](https://github.com/nnekaanadu-art/product-prioritization-tool)
+- **Value Ledger:** Benefits realization tracking with plan versus actual results. [Try it](https://nnekaanadu-art.github.io/value-ledger/) | [Repository](https://github.com/nnekaanadu-art/value-ledger)
+- **Mortgage Lab:** Canadian and US mortgage payment calculator. [Try it](https://nnekaanadu-art.github.io/mortgage-payment-calculator/) | [Repository](https://github.com/nnekaanadu-art/mortgage-payment-calculator)
+- **BusinessLedger:** Sales and expense tracker for small business owners. *Coming soon*
 
-[View GitHub Repository](https://github.com/nnekaanadu-art/contact-centre-agent-assist)
+These are independent personal projects, not affiliated with any employer. All prototypes use fictional sample data, and the contact centre prototype uses synthetic conversations only.
 
-[Read the PRD](https://github.com/nnekaanadu-art/contact-centre-agent-assist/blob/main/docs/PRD.md)
-
-**Product Prioritization and Roadmap Tool**
-
-Helps product teams decide what to build next, with prioritization frameworks, roadmap planning, and capacity management.
-
-[Try Interactive Prototype](https://nnekaanadu-art.github.io/product-prioritization-tool/)
-
-[View GitHub Repository](https://github.com/nnekaanadu-art/product-prioritization-tool)
-
-**Value Ledger: Benefits Realization Tracker**
-
-Helps product and project leaders track whether delivered work produces the value it promised, with monthly and quarterly plan versus actual tracking, net financial value, and a one-page executive brief.
-
-[Try Interactive Prototype](https://nnekaanadu-art.github.io/value-ledger/)
-
-[View GitHub Repository](https://github.com/nnekaanadu-art/value-ledger)
-
-**Mortgage Payment Calculator**
-
-Helps buyers compare Canadian and US mortgage options, with amortization schedules and payment scenarios. For illustration only. Not financial advice.
-
-[Try Interactive Prototype](https://nnekaanadu-art.github.io/mortgage-payment-calculator/)
-
-[View GitHub Repository](https://github.com/nnekaanadu-art/mortgage-payment-calculator)
-
-**BusinessLedger**
-
-A business management prototype that explores ways to simplify business operations and give owners clearer visibility into their business information.
-
-*Coming soon*
-
-All prototypes use fictional sample data, and the contact centre prototype uses synthetic conversations only. Case studies are anonymized.
-
-## Portfolio Website
-
-[Visit my portfolio](https://nnekaanadu-art.github.io/)
-
-## Connect With Me
+## Connect
 
 [LinkedIn](https://www.linkedin.com/in/NnekaAnadu)
-
-I welcome conversations about product roles.
-
-This portfolio is an evolving collection of independent prototypes and case studies. New features and content will be added over time.
