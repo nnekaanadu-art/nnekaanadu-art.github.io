@@ -11,3 +11,6 @@ All prototypes are independent personal projects, not affiliated with any employ
 ## Connect
 
 [LinkedIn](https://www.linkedin.com/in/NnekaAnadu)
+
+
+© 2026 Nneka Anadu. All rights reserved.
