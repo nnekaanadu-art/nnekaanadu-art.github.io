@@ -2,7 +2,7 @@
 
 ### From Strategy to Measurable Impact
 
-Welcome to my product leadership portfolio, where I showcase how I approach product strategy, problem-solving, AI-assisted development, and measurable business outcomes.
+Welcome to my portfolio, where I showcase how I approach product strategy, problem-solving, AI-assisted development, and measurable business outcomes.
 
 Through interactive prototypes, product management tools, and digital experiences, I demonstrate how I translate real-world problems into practical solutions, make informed product decisions, and continuously improve outcomes through experimentation and feedback.
 
@@ -55,7 +55,7 @@ Explore tools such as n8n, Make, and Zapier to connect workflows, reduce repetit
 
 These are independent personal projects developed for demonstration, learning, and experimentation. They are not employer-owned products.
 
-Project examples may use fictional or synthetic data. Some AI capabilities are simulated for demonstration purposes, and prototype functionality may not represent production-ready implementations.
+Project examples use fictional or synthetic data. Some AI capabilities are simulated for demonstration purposes, and prototype functionality may not represent production-ready implementations.
 
 Each project repository provides additional information about its purpose, capabilities, implementation, and limitations.
 
