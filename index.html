@@ -1,326 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nneka Anadu | AI and Automation Portfolio</title>
-<meta name="description" content="Prototypes and ideas showing how I use AI and automation day to day.">
-<style>
-  :root {
-    --navy: #14243d;
-    --blue: #2f6fdd;
-    --blue-dark: #24569f;
-    --ink: #1b2a41;
-    --muted: #4a5870;
-    --bg-1: #f7f9fc;
-    --bg-2: #edf2f9;
-    --card: #ffffff;
-    --line: #dde4ee;
-  }
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: var(--ink);
-    line-height: 1.6;
-    background: var(--bg-1);
-  }
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Nneka Anadu's interactive product leadership prototypes, from strategy and discovery to delivery and measurable outcomes."><title>Nneka Anadu | Product Leadership in Action</title><style>
+:root{--navy:#14243d;--navy2:#203858;--blue:#2867c9;--ink:#1b2a41;--muted:#52627a;--line:#dbe4f0;--pale:#f5f8fc;--white:#fff;--teal:#0d766e}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55}a{color:var(--blue)}button{font:inherit}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #83b8ff;outline-offset:3px}.wrap{max-width:1380px;margin:auto;padding:0 42px}.nav{background:white;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}.nav .wrap{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;color:var(--navy);white-space:nowrap}.nav nav{display:flex;gap:22px;flex-wrap:wrap}.nav nav a{color:var(--ink);text-decoration:none;font-size:.91rem;font-weight:550}.nav nav a:hover{text-decoration:underline}.hero{background:linear-gradient(115deg,#14243d,#233e60);color:white;padding:70px 0 76px}.hero-layout{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(250px,.65fr);gap:52px;align-items:center}.eyebrow{font-size:.74rem;text-transform:uppercase;letter-spacing:.11em;font-weight:750;color:var(--blue)}.hero .eyebrow{color:#a8caff}.hero h1{font-size:clamp(2.2rem,4.5vw,4rem);line-height:1.12;letter-spacing:-.035em;margin:14px 0 22px;max-width:800px}.hero p{color:#e0eaf6;max-width:720px;font-size:1.08rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 17px;border-radius:8px;font-weight:700;text-decoration:none;background:#4b87e7;color:white}.btn.secondary{background:transparent;border:1px solid #92a9c8;color:white}.hero-panel{border:1px solid #526b88;background:#ffffff0b;border-radius:16px;padding:24px}.hero-panel p{font-size:.85rem;margin:0 0 15px}.hero-panel .mini{padding:9px 0;border-bottom:1px solid #ffffff27;color:#f2f7ff;font-weight:600}.hero-panel .mini:last-child{border:0}.section{padding:58px 0}.section.alt{background:var(--pale)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:25px}.section h2{font-size:clamp(1.6rem,2.4vw,2.1rem);margin:0 0 9px;letter-spacing:-.025em}.intro{margin:0;color:var(--muted);max-width:880px}.lifecycle{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px;margin:28px 0 20px}.stage{background:white;border:1px solid var(--line);border-radius:12px;padding:18px 10px;cursor:pointer;text-align:left;min-height:112px;color:var(--ink);transition:background .15s,border .15s}.stage .number{display:block;color:#60738e;font-size:.73rem;font-weight:800;margin-bottom:8px}.stage strong{display:block;font-size:.93rem}.stage small{display:block;color:var(--muted);margin-top:5px;font-size:.72rem}.stage.active{background:#e9f1ff;border:2px solid var(--blue);padding:17px 9px}.stage:hover{border-color:#7fa5df}.stage-detail{display:flex;align-items:center;justify-content:space-between;gap:15px;background:white;border:1px solid var(--line);border-radius:12px;padding:19px 22px;margin-bottom:20px}.stage-detail h3{margin:0 0 3px}.stage-detail p{margin:0;color:var(--muted)}.text-btn{background:white;border:1px solid var(--line);padding:9px 14px;border-radius:8px;cursor:pointer;color:var(--blue);font-weight:700;white-space:nowrap}.projects-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.project-card{background:white;border:1px solid var(--line);border-radius:13px;padding:23px;display:flex;flex-direction:column;min-height:310px}.card-top{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.status{font-size:.7rem;font-weight:700;color:#087264;background:#e9f7f1;border-radius:99px;padding:5px 9px}.muted-status{color:#6a5c35;background:#f7f1dc}.project-card h3{font-size:1.12rem;line-height:1.3;margin:16px 0 9px}.summary{margin:0 0 15px;color:var(--muted);font-size:.91rem}.project-card details{font-size:.85rem;color:var(--muted);margin-top:auto}.project-card summary{cursor:pointer;font-weight:700;color:var(--blue);padding:7px 0}.project-card details p{margin:8px 0}.card-links{border-top:1px solid var(--line);padding-top:15px;margin-top:16px;display:flex;gap:10px 18px;flex-wrap:wrap}.card-links a{font-weight:700;font-size:.83rem;text-decoration:none}.card-links a:hover{text-decoration:underline}.no-link{font-size:.83rem;color:var(--muted)}.notice{background:#edf3fb;border-left:3px solid var(--blue);padding:14px 17px;color:#40546f;border-radius:0 8px 8px 0;margin-top:20px;font-size:.9rem}.how-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:24px}.how-card,.future-card{background:white;border:1px solid var(--line);border-radius:12px;padding:20px}.how-card .step{font-size:.75rem;font-weight:800;color:var(--blue)}.how-card h3,.future-card h3{font-size:1rem;margin:9px 0}.how-card p,.future-card p{font-size:.88rem;color:var(--muted);margin:0}.future-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:24px}.connect{background:var(--navy);color:white;padding:45px 0}.connect p{color:#e0eaf6}.connect a{color:#c8ddff;margin-right:20px;font-weight:650}.footer{background:var(--navy);color:#b8c8de;padding:0 0 25px;font-size:.83rem}.footer .wrap{border-top:1px solid #43566f;padding-top:19px}.empty{border:1px dashed #aabbd0;padding:24px;background:white;border-radius:12px;color:var(--muted)}[hidden]{display:none!important}@media(max-width:1050px){.lifecycle{grid-template-columns:repeat(3,1fr)}.projects-grid{grid-template-columns:repeat(2,1fr)}.how-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:700px){.wrap{padding:0 18px}.nav .wrap{padding-top:13px;padding-bottom:13px;align-items:flex-start;flex-direction:column;gap:9px}.nav nav{gap:10px 16px}.nav nav a{font-size:.83rem}.hero{padding:46px 0}.hero-layout{grid-template-columns:1fr;gap:24px}.hero-panel{display:none}.lifecycle{grid-template-columns:repeat(2,1fr)}.projects-grid,.future-grid,.how-grid{grid-template-columns:1fr}.stage-detail{align-items:flex-start;flex-direction:column}.section{padding:40px 0}.project-card{min-height:0}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
-  .wrap {
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 48px;
-  }
+/* Tighter horizontal layout: use more of the available viewport. */
+.wrap{max-width:1680px;padding-left:24px;padding-right:24px}
+.hero-layout{grid-template-columns:minmax(0,1.6fr) minmax(240px,.55fr);gap:24px}
+.lifecycle{gap:8px}
+.projects-grid{gap:12px}
+.project-card{padding:18px}
+.how-grid,.future-grid{gap:12px}
+@media(max-width:700px){.wrap{padding-left:14px;padding-right:14px}.hero-layout{grid-template-columns:1fr}.project-card{padding:17px}}
 
-  header.nav { background: #fff; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }
-  header.nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 56px; }
-  .brand { font-weight: 700; letter-spacing: 0.06em; font-size: 0.85rem; text-transform: uppercase; }
-  nav a { margin-left: 20px; font-size: 0.9rem; color: var(--ink); text-decoration: none; }
-  nav a:hover, nav a:focus-visible { text-decoration: underline; }
-  a:focus-visible, .btn:focus-visible { outline: 3px solid #9cc0ff; outline-offset: 2px; }
+/* Layout correction: avoid oversized, sparse columns on wide monitors. */
+.wrap{width:min(100% - 32px,1160px);max-width:none;padding-left:0;padding-right:0}
+.hero-layout{grid-template-columns:minmax(0,1.55fr) minmax(260px,.75fr);gap:26px}
+.hero h1,.hero p{max-width:100%}
+.projects-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.project-card{min-height:0;padding:18px}
+.lifecycle{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.stage{min-height:88px;padding:12px 14px}
+.stage.active{padding:11px 13px}
+.how-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.future-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.section{padding:38px 0}
+@media(max-width:700px){.wrap{width:calc(100% - 28px)}.hero-layout{grid-template-columns:1fr}.projects-grid,.how-grid,.future-grid{grid-template-columns:1fr}.lifecycle{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
-  .hero { background: var(--navy); color: #fff; padding: 28px 0 32px; }
-  .hero .label { color: #9cc0ff; font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; margin: 0 0 16px; }
+/* Compact header and hero: remove excessive blank space */
+.nav .wrap{min-height:56px;gap:14px}
+.nav nav{gap:14px}
+.hero{padding:30px 0 34px}
+.hero-layout{grid-template-columns:minmax(0,1.55fr) minmax(280px,.8fr);gap:28px;align-items:start}
+.hero .eyebrow{display:block;line-height:1.4;margin:0 0 12px}
+.hero h1{margin:0 0 14px;font-size:clamp(2.1rem,4vw,3.4rem)}
+.hero p{margin:0;line-height:1.5}
+.hero .actions{margin-top:20px;gap:10px}
+.hero-panel{padding:17px 21px;align-self:start}
+.hero-panel p{margin:0 0 8px}
+.hero-panel .mini{padding:7px 0;line-height:1.35}
+@media(max-width:700px){.hero{padding:26px 0 30px}.hero-layout{grid-template-columns:1fr;gap:14px}.nav .wrap{min-height:0}.hero .actions{margin-top:16px}}
 
-  .hero h1 {
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    line-height: 1.12;
-    margin: 0 0 20px;
-    max-width: 100%;
-  }
+/* Compact spacing across all remaining homepage sections */
+.section{padding:24px 0}
+.section-head{margin-bottom:12px;gap:10px}
+.section h2{margin-bottom:5px;line-height:1.2}
+.intro{line-height:1.45}
+.how-grid,.future-grid{margin-top:12px;gap:10px}
+.how-card,.future-card{padding:14px 16px}
+.how-card h3,.future-card h3{margin:5px 0 6px;line-height:1.3}
+.how-card p,.future-card p{line-height:1.45}
+.lifecycle{margin:14px 0 12px;gap:8px}
+.stage{min-height:76px;padding:10px 12px}
+.stage.active{padding:9px 11px}
+.stage .number{margin-bottom:3px}
+.stage small{margin-top:2px}
+.stage-detail{padding:12px 16px;margin-bottom:12px}
+.project-card{padding:14px 16px;min-height:0}
+.project-card h3{margin:9px 0 6px}
+.project-card .summary{margin-bottom:8px;line-height:1.45}
+.project-card details{margin-top:4px}
+.card-links{padding-top:9px;margin-top:9px}
+.projects-grid{gap:10px}
+.notice{margin-top:12px;padding:10px 14px}
+#experiences .projects-grid{margin-top:12px!important}
+.connect{padding:24px 0 18px}
+.connect h2{margin:0 0 6px}
+.connect p{margin:0 0 10px}
+.footer{padding-bottom:15px}
+.footer .wrap{padding-top:12px}
+@media(max-width:700px){.section{padding:22px 0}.how-grid,.future-grid{margin-top:10px}.stage{min-height:70px}.connect{padding:22px 0 16px}}
 
-  .hero p.lead {
-    max-width: 100%;
-    color: #e4ebf7;
-    margin: 0 0 28px;
-  }
+/* Compact How I Work cards: remove excess space above step numbers */
+.how-card{padding:10px 16px 13px}
+.how-card .step{display:block;line-height:1.15;margin:0}
+.how-card h3{margin:8px 0 6px}
+@media(max-width:700px){.how-card{padding:10px 14px 13px}}
+/* Remove excess space above Customer-facing products */
+#experiences{padding-top:8px}
+@media(max-width:700px){#experiences{padding-top:6px}}
 
-  .btn { display: inline-block; background: var(--blue); color: #fff; padding: 11px 20px; border-radius: 6px; font-weight: 600; font-size: 0.9rem; text-decoration: none; }
-  .btn:hover { background: var(--blue-dark); }
-
-  section.block { padding: 24px 0; }
-  section.alt { background: var(--bg-2); }
-  section.block h2 { margin: 0 0 12px; font-size: 1.5rem; }
-
-  section.block p.intro {
-    max-width: none;
-    width: 100%;
-    color: var(--muted);
-    margin: 0 0 18px;
-  }
-
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
-
-  /* Project cards: 4 per row on desktop, 2 on tablets, 1 on phones (order is always kept) */
-  .grid.projects-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  @media (max-width: 1100px) {
-    .grid.projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  }
-  @media (max-width: 640px) {
-    .grid.projects-grid { grid-template-columns: 1fr; }
-  }
-
-  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 20px; }
-  .card h3 { margin: 0 0 8px; font-size: 1rem; }
-  .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
-  .card .tag { display: block; color: var(--blue-dark); font-weight: 700; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px; }
-  .card .status { margin-top: 14px; font-size: 0.88rem; color: var(--ink); font-weight: 600; }
-  .card .links { margin-top: 8px; }
-  .card .links a { display: block; margin-top: 6px; color: var(--blue); font-weight: 600; }
-  .card .links a:visited { color: var(--blue); }
-  .note { margin-top: 24px; font-size: 0.9rem; color: var(--muted); max-width: 70ch; }
-
-  .connect { background: var(--navy); color: #fff; padding: 24px 0 8px; }
-  .connect h2 { margin: 0 0 12px; font-size: 1.5rem; }
-
-  .connect p {
-    margin: 0 0 16px;
-    color: #e4ebf7;
-    max-width: none;
-  }
-
-  .connect a { color: #cfe0ff; margin-right: 18px; }
-  footer { background: var(--navy); color: #b9c6dc; font-size: 0.82rem; padding: 0 0 32px; }
-  footer .wrap { border-top: 1px solid #2b3d5c; padding-top: 18px; }
-
-  @media (max-width: 560px) {
-    nav a { margin-left: 12px; font-size: 0.82rem; }
-    .hero { padding: 32px 0 36px; }
-  }
-  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-
-  /* Responsive page margins */
-  @media (max-width: 768px) {
-    .wrap {
-      padding-left: 24px;
-      padding-right: 24px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .wrap {
-      padding-left: 16px;
-      padding-right: 16px;
-    }
-
-    header.nav .wrap {
-      height: auto;
-      min-height: 56px;
-      flex-wrap: wrap;
-      gap: 8px;
-      padding-top: 12px;
-      padding-bottom: 12px;
-    }
-
-    nav a {
-      margin-left: 0;
-      margin-right: 12px;
-    }
-  }
-</style>
-</head>
-<body>
-
-<header class="nav">
-  <div class="wrap">
-    <span class="brand">Nneka Anadu</span>
-    <nav aria-label="Main">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#in-progress">In Progress</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <section class="hero">
-    <div class="wrap">
-      <p class="label">AI Prototyping • Automation • Practical Ideas</p>
-      <h1>Putting AI and automation to work.</h1>
-      <p class="lead">My name is Nneka Anadu. I use AI and automation every day to research, plan, and build. This site showcases prototypes I have built and ideas for how they apply to real work.</p>
-      <a class="btn" href="#projects">Explore My Projects</a>
-    </div>
-  </section>
-
-  <section class="block" id="about">
-    <div class="wrap">
-      <h2>How I Work</h2>
-      <p class="intro">I start with a real problem, define what a solution should do, build it with AI tools, and test it until the results hold up.</p>
-      <div class="grid">
-        <div class="card">
-          <h3>Start with a Problem</h3>
-          <p>Each project begins with a real need and clear requirements.</p>
-        </div>
-        <div class="card">
-          <h3>Build with AI</h3>
-          <p>I use tools like ChatGPT, Claude, Gemini, and Google Colab to turn requirements into working prototypes.</p>
-        </div>
-        <div class="card">
-          <h3>Test and Improve</h3>
-          <p>I check results against clear criteria, catch where AI gets things wrong, and refine each version.</p>
-        </div>
-        <div class="card">
-          <h3>Automate the Routine</h3>
-          <p>I use tools like n8n, Make, and Zapier to connect apps and remove repetitive steps.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="block alt" id="projects">
-    <div class="wrap">
-      <h2>Interactive Prototypes</h2>
-      <p class="intro">Prototypes I designed and built with AI tools (ChatGPT, Claude, Gemini, and Google Colab). For each one, I defined the requirements, directed the build, and tested the results. These are independent personal projects and are not affiliated with any employer. All prototypes use fictional sample data, and the contact centre prototype uses synthetic conversations only.</p>
-      <div class="grid projects-grid">
-
-        <!-- Row 1, card 1: AI Story Studio -->
-        <div class="card">
-          <span class="tag">Product delivery</span>
-          <h3>AI Story Studio: User Story Drafting and Review</h3>
-          <p>Shows how AI can speed up user story writing while people stay in control of quality. It turns a business need into a draft user story, acceptance criteria, and open questions, then guides a human review against the INVEST principles and a Definition of Ready. It also suggests separately scoped follow-up stories and summarizes progress in an executive brief. Story generation is simulated, so the prototype runs anywhere without setup.</p>
-          <p><strong>Where this applies:</strong> backlog refinement, when teams want faster first drafts without skipping the review that makes a story ready for development.</p>
-          <p class="status">Interactive prototype available</p>
-          <p class="links">
-            <a href="https://nnekaanadu-art.github.io/ai-story-studio/"
-               target="_blank" rel="noopener noreferrer">Try Interactive Prototype</a>
-            <a href="https://github.com/nnekaanadu-art/ai-story-studio"
-               target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
-          </p>
-        </div>
-
-        <!-- Row 1, card 2: Northstar -->
-        <div class="card">
-          <span class="tag">Product operations</span>
-          <h3>Northstar: Product Prioritization and Roadmap Tool</h3>
-          <p>A tool that helps product teams decide what to build first. It ranks initiatives using three scoring methods (weighted value, RICE, and WSJF), lays out a quarterly roadmap, checks plans against team capacity, compares scenarios, and produces an executive summary.</p>
-          <p><strong>Where this applies:</strong> quarterly planning, when teams need a transparent and consistent way to rank competing initiatives.</p>
-          <p class="status">Interactive prototype available</p>
-          <p class="links">
-            <a href="https://nnekaanadu-art.github.io/product-prioritization-tool/"
-               target="_blank" rel="noopener noreferrer">Try Interactive Prototype</a>
-            <a href="https://github.com/nnekaanadu-art/product-prioritization-tool"
-               target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
-          </p>
-        </div>
-
-        <!-- Row 1, card 3: Value Ledger -->
-        <div class="card">
-          <span class="tag">Value realization</span>
-          <h3>Value Ledger: Benefits Realization Tracker</h3>
-          <p>Helps product and project leaders track whether delivered work produces the value it promised. It records initiatives and their expected benefits, compares planned and actual results by month and by quarter, tracks net financial value against program costs, and produces a one-page executive brief.</p>
-          <p><strong>Where this applies:</strong> portfolio reviews that need to show whether funded work delivered the value it promised.</p>
-          <p class="status">Interactive prototype available</p>
-          <p class="links">
-            <a href="https://nnekaanadu-art.github.io/value-ledger/"
-               target="_blank" rel="noopener noreferrer">Try Interactive Prototype</a>
-            <a href="https://github.com/nnekaanadu-art/value-ledger"
-               target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
-          </p>
-        </div>
-
-        <!-- Row 1, card 4: Contact Centre Agent Assist -->
-        <div class="card">
-          <span class="tag">AI and customer service</span>
-          <h3>Contact Centre Agent Assist Proof of Concept</h3>
-          <p>An independent concept showing how AI could help contact centre agents after a call. It produces a conversation summary, identifies customer intent, flags complaints and vulnerable customers, and suggests a next best action. Results are checked against a sample answer key, and the prototype matched it on 19 of 20 test calls. Built with Claude, Gemini, Google Colab, and Google Sheets.</p>
-          <p><strong>Where this applies:</strong> contact centres that want faster after-call work and consistent flagging of complaints and vulnerable customers, with accuracy measured before rollout.</p>
-          <p class="status">Proof of concept with evaluation results</p>
-          <p class="links">
-            <a href="https://github.com/nnekaanadu-art/contact-centre-agent-assist"
-               target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
-            <a href="https://github.com/nnekaanadu-art/contact-centre-agent-assist/blob/main/docs/PRD.md"
-               target="_blank" rel="noopener noreferrer">Read the PRD</a>
-          </p>
-        </div>
-
-        <!-- Row 2, card 1: Mortgage Lab -->
-        <div class="card">
-          <span class="tag">Financial tools</span>
-          <h3>Mortgage Lab: Mortgage Payment Calculator</h3>
-          <p>Helps buyers estimate Canadian and US mortgage payments, compare two scenarios side by side, view amortization schedules, and estimate first-time buyer incentives in Ontario and British Columbia. For illustration only. Not financial advice.</p>
-          <p><strong>Where this applies:</strong> customer-facing tools that help buyers understand their costs before speaking with an advisor.</p>
-          <p class="status">Interactive prototype available</p>
-          <p class="links">
-            <a href="https://nnekaanadu-art.github.io/mortgage-payment-calculator/"
-               target="_blank" rel="noopener noreferrer">Try Interactive Prototype</a>
-            <a href="https://github.com/nnekaanadu-art/mortgage-payment-calculator"
-               target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
-          </p>
-        </div>
-
-        <!-- Row 2, card 2: BusinessLedger -->
-        <div class="card">
-          <span class="tag">Business operations</span>
-          <h3>BusinessLedger: Sales and Expense Tracker</h3>
-          <p>A simple bookkeeping tool for small business owners. It records income and expenses, breaks down income by business activity and payment method, and reports on monthly revenue trends and which activities are most profitable.</p>
-          <p class="status">Coming soon</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="in-progress">
-    <div class="wrap">
-      <h2>In Progress</h2>
-      <p class="intro">What I am working on next.</p>
-      <div class="grid">
-        <div class="card">
-          <h3>Research Assistant (RAG)</h3>
-          <p>A grounded research assistant in NotebookLM that I use to prepare briefs from trusted sources. Next, a shareable version for this portfolio.</p>
-        </div>
-        <div class="card">
-          <h3>Job-Matching Agent</h3>
-          <p>An n8n workflow that reads job alerts, scores each role against my resume, and logs results to Google Sheets, with my approval before anything is sent.</p>
-        </div>
-        <div class="card">
-          <h3>Content Pipeline</h3>
-          <p>A multi-agent workflow in Google Colab where separate agents choose topics, write scripts, and review them before voiceover.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="connect" id="contact">
-    <div class="wrap">
-      <h2>Let's Connect</h2>
-      <p>I enjoy talking about practical uses of AI and automation. Feel free to reach out.</p>
-      <p>
-        <a href="https://www.linkedin.com/in/NnekaAnadu" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/nnekaanadu-art" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </p>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap">
-    © 2026 Nneka Anadu
-  </div>
-</footer>
-
-</body>
-</html>
+/* Tighter What's Next section and cards */
+#in-progress{padding-top:8px;padding-bottom:20px}
+#in-progress .future-grid{margin-top:12px;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+#in-progress .future-card{padding:11px 16px 13px}
+#in-progress .future-card h3{margin:0 0 5px;line-height:1.3}
+#in-progress .future-card p{line-height:1.45}
+@media(max-width:700px){#in-progress{padding-top:7px;padding-bottom:16px}#in-progress .future-grid{grid-template-columns:1fr;gap:10px}#in-progress .future-card{padding:10px 13px 12px}}
+</style></head><body><header class="nav"><div class="wrap"><a class="brand" href="#top">Nneka Anadu</a><nav aria-label="Main navigation"><a href="#top">About</a><a href="#projects">Product Lifecycle</a><a href="#experiences">Digital Experiences</a><a href="#in-progress">In Progress</a><a href="#contact">Contact</a></nav></div></header><main id="top"><section class="hero"><div class="wrap hero-layout"><div><span class="eyebrow">Product strategy · AI prototyping · Measurable outcomes</span><h1>From strategy to measurable impact.</h1><p>I design and test interactive product tools that help turn business problems into practical solutions. Explore how I approach prioritization, requirements, delivery, and value realization through independent prototypes.</p><div class="actions"><a class="btn" href="#projects">Explore the lifecycle →</a><a class="btn secondary" href="#experiences">Digital product experiences</a></div></div><aside class="hero-panel" aria-label="Product lifecycle highlights"><p>PRODUCT LEADERSHIP IN ACTION</p><div class="mini">01 — Identify opportunities</div><div class="mini">02 — Make strategic trade-offs</div><div class="mini">03 — Shape delivery-ready work</div><div class="mini">04 — Build and validate solutions</div><div class="mini">05 — Measure and improve value</div></aside></div></section><section class="section" id="about"><div class="wrap"><div class="section-head"><div><span class="eyebrow">How I work</span><h2>Problem-led. Outcome-focused.</h2><p class="intro">I start with a real problem, define what a solution should do, build it with AI tools, and test it until the results hold up.</p></div></div><div class="how-grid"><div class="how-card"><span class="step">01</span><h3>Start with a problem</h3><p>Each project begins with a real need and clear requirements.</p></div><div class="how-card"><span class="step">02</span><h3>Build with AI</h3><p>I use tools like ChatGPT, Claude, Gemini, and Google Colab to turn requirements into working prototypes.</p></div><div class="how-card"><span class="step">03</span><h3>Test and improve</h3><p>I check results against clear criteria, catch where AI gets things wrong, and refine each version.</p></div><div class="how-card"><span class="step">04</span><h3>Automate the routine</h3><p>I explore n8n, Make, and Zapier to connect apps and remove repetitive steps.</p></div></div></div></section><section class="section alt" id="projects"><div class="wrap"><span class="eyebrow">Interactive toolkit</span><h2>Explore the product lifecycle</h2><p class="intro">Select a stage to see the relevant prototypes. The lifecycle is iterative: discovery, planning, delivery, and measurement inform one another.</p><div class="lifecycle" role="group" aria-label="Filter prototypes by product lifecycle stage"><button class="stage active" data-filter="All" aria-pressed="true"><span class="number">ALL</span><strong>All tools</strong><small>Explore the toolkit</small></button><button class="stage" data-filter="Discover" aria-pressed="false"><span class="number">01</span><strong>Discover</strong><small>Identify needs</small></button><button class="stage" data-filter="Strategize" aria-pressed="false"><span class="number">02</span><strong>Strategize</strong><small>Set priorities</small></button><button class="stage" data-filter="Define" aria-pressed="false"><span class="number">03</span><strong>Define</strong><small>Shape requirements</small></button><button class="stage" data-filter="Deliver" aria-pressed="false"><span class="number">04</span><strong>Build &amp; Validate</strong><small>Test solutions</small></button><button class="stage" data-filter="Measure" aria-pressed="false"><span class="number">05</span><strong>Measure</strong><small>Track outcomes</small></button><button class="stage" data-filter="Optimize" aria-pressed="false"><span class="number">06</span><strong>Optimize</strong><small>Improve results</small></button></div><div class="stage-detail" aria-live="polite"><div><h3 id="stage-heading">All lifecycle tools</h3><p id="stage-description">Browse working prototypes and proofs of concept across the product lifecycle.</p></div><button class="text-btn" id="reset" type="button" hidden>Show all tools</button></div><div class="projects-grid" id="tool-grid"><article class="project-card" data-stage="Define"><div class="card-top"><span class="eyebrow">Product delivery</span><span class="status ">Published</span></div><h3>AI Story Studio: User Story Drafting and Review</h3><p class="summary">AI-assisted story drafting, acceptance criteria and human review.</p><details><summary>About this prototype</summary><p>Shows how AI can speed up user story writing while people stay in control of quality. It turns a business need into a draft user story, acceptance criteria, and open questions, then guides a human review against the INVEST principles and a Definition of Ready. It also suggests separately scoped follow-up stories and summarizes progress in an executive brief. Story generation is simulated, so the prototype runs anywhere without setup.</p><p>Where this applies: backlog refinement, when teams want faster first drafts without skipping the review that makes a story ready for development.</p></details><div class="card-links"><a href="https://nnekaanadu-art.github.io/ai-story-studio/" target="_blank" rel="noopener noreferrer">Interactive Prototype <span aria-hidden="true">↗</span></a><a href="https://github.com/nnekaanadu-art/ai-story-studio" target="_blank" rel="noopener noreferrer">GitHub Repository <span aria-hidden="true">↗</span></a></div></article>
+<article class="project-card" data-stage="Strategize"><div class="card-top"><span class="eyebrow">Product operations</span><span class="status ">Published</span></div><h3>Northstar: Product Prioritization and Roadmap Tool</h3><p class="summary">Prioritize initiatives, model capacity and plan roadmaps.</p><details><summary>About this prototype</summary><p>A tool that helps product teams decide what to build first. It ranks initiatives using three scoring methods (weighted value, RICE, and WSJF), lays out a quarterly roadmap, checks plans against team capacity, compares scenarios, and produces an executive summary.</p><p>Where this applies: quarterly planning, when teams need a transparent and consistent way to rank competing initiatives.</p></details><div class="card-links"><a href="https://nnekaanadu-art.github.io/product-prioritization-tool/" target="_blank" rel="noopener noreferrer">Interactive Prototype <span aria-hidden="true">↗</span></a><a href="https://github.com/nnekaanadu-art/product-prioritization-tool" target="_blank" rel="noopener noreferrer">GitHub Repository <span aria-hidden="true">↗</span></a></div></article>
+<article class="project-card" data-stage="Measure"><div class="card-top"><span class="eyebrow">Value realization</span><span class="status ">Published</span></div><h3>Value Ledger: Benefits Realization Tracker</h3><p class="summary">Compare expected and actual benefits and measure business value.</p><details><summary>About this prototype</summary><p>Helps product and project leaders track whether delivered work produces the value it promised. It records initiatives and their expected benefits, compares planned and actual results by month and by quarter, tracks net financial value against program costs, and produces a one-page executive brief.</p><p>Where this applies: portfolio reviews that need to show whether funded work delivered the value it promised.</p></details><div class="card-links"><a href="https://nnekaanadu-art.github.io/value-ledger/" target="_blank" rel="noopener noreferrer">Interactive Prototype <span aria-hidden="true">↗</span></a><a href="https://github.com/nnekaanadu-art/value-ledger" target="_blank" rel="noopener noreferrer">GitHub Repository <span aria-hidden="true">↗</span></a></div></article>
+</div><div class="empty" id="empty" hidden>No published tool is assigned primarily to this stage yet. More prototypes are planned.</div><div class="notice">These are independent personal projects, not employer products. Demonstration data is fictional; contact-centre examples use synthetic conversations. Simulated AI functionality is identified within the relevant prototypes.</div></div></section><section class="section" id="experiences"><div class="wrap"><span class="eyebrow">Customer-facing products</span><h2>Digital product experiences</h2><p class="intro">Interactive applications designed around end-user needs, business rules, and practical decision support.</p><div class="projects-grid" style="margin-top:25px"><article class="project-card" data-stage="Experience"><div class="card-top"><span class="eyebrow">AI and customer service</span><span class="status ">Proof of concept</span></div><h3>Contact Centre Agent Assist Proof of Concept</h3><p class="summary">Explore AI-supported contact-centre workflows and evaluation.</p><details><summary>About this prototype</summary><p>An independent concept showing how AI could help contact centre agents after a call. It produces a conversation summary, identifies customer intent, flags complaints and vulnerable customers, and suggests a next best action. Results are checked against a sample answer key, and the prototype matched it on 19 of 20 test calls. Built with Claude, Gemini, Google Colab, and Google Sheets.</p><p>Where this applies: contact centres that want faster after-call work and consistent flagging of complaints and vulnerable customers, with accuracy measured before rollout.</p></details><div class="card-links"><a href="https://github.com/nnekaanadu-art/contact-centre-agent-assist" target="_blank" rel="noopener noreferrer">GitHub Repository <span aria-hidden="true">↗</span></a><a href="https://github.com/nnekaanadu-art/contact-centre-agent-assist/blob/main/docs/PRD.md" target="_blank" rel="noopener noreferrer">PRD <span aria-hidden="true">↗</span></a></div></article><article class="project-card" data-stage="Experience"><div class="card-top"><span class="eyebrow">Financial tools</span><span class="status ">Published</span></div><h3>Mortgage Lab: Mortgage Payment Calculator</h3><p class="summary">Explore mortgage scenarios and amortization for Canada and the US.</p><details><summary>About this prototype</summary><p>Helps buyers estimate Canadian and US mortgage payments, compare two scenarios side by side, view amortization schedules, and estimate first-time buyer incentives in Ontario and British Columbia. For illustration only. Not financial advice.</p><p>Where this applies: customer-facing tools that help buyers understand their costs before speaking with an advisor.</p></details><div class="card-links"><a href="https://nnekaanadu-art.github.io/mortgage-payment-calculator/" target="_blank" rel="noopener noreferrer">Interactive Prototype <span aria-hidden="true">↗</span></a><a href="https://github.com/nnekaanadu-art/mortgage-payment-calculator" target="_blank" rel="noopener noreferrer">GitHub Repository <span aria-hidden="true">↗</span></a></div></article>
+<article class="project-card" data-stage="Experience"><div class="card-top"><span class="eyebrow">Business operations</span><span class="status muted-status">Coming soon</span></div><h3>BusinessLedger: Sales and Expense Tracker</h3><p class="summary">Track sales, expenses and profitability for small businesses.</p><details><summary>About this prototype</summary><p>A simple bookkeeping tool for small business owners. It records income and expenses, breaks down income by business activity and payment method, and reports on monthly revenue trends and which activities are most profitable.</p><p>Coming soon</p></details><div class="card-links"><span class="no-link">Coming soon</span></div></article></div></div></section><section class="section alt" id="in-progress"><div class="wrap"><span class="eyebrow">What's next</span><h2>In progress & exploration</h2><p class="intro">Concepts and tools being explored, separate from published demonstrations.</p><div class="future-grid"><div class="future-card"><h3>RequirementIQ</h3><p>AI-assisted requirements intake, quality analysis, traceability, and human review. Initial prototype under review; not yet published.</p></div><div class="future-card"><h3>Research Assistant (RAG)</h3><p>A grounded research assistant in NotebookLM that I use to prepare briefs from trusted sources. Next, a shareable version for this portfolio.</p></div><div class="future-card"><h3>Job-Matching Agent</h3><p>An n8n workflow that reads job alerts, scores each role against my resume, and logs results to Google Sheets, with my approval before anything is sent.</p></div><div class="future-card"><h3>Content Pipeline</h3><p>A multi-agent workflow in Google Colab where separate agents choose topics, write scripts, and review them before voiceover.</p></div></div></div></section><section class="connect" id="contact"><div class="wrap"><h2>Let's Connect</h2><p>I enjoy talking about practical uses of product thinking, AI, and automation. Feel free to reach out.</p><a href="https://www.linkedin.com/in/NnekaAnadu" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/nnekaanadu-art" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></section></main><footer class="footer"><div class="wrap">© 2026 Nneka Anadu · <a href="https://nnekaanadu-art.github.io/" style="color:#c8ddff">Portfolio home</a></div></footer><script>
+const descriptions={All:['All lifecycle tools','Browse working prototypes and proofs of concept across the product lifecycle.'],Discover:['Discover opportunities','Identify customer needs, problems, and opportunities worth solving.'],Strategize:['Set direction and priorities','Evaluate initiatives, compare trade-offs, and align roadmaps to capacity.'],Define:['Define the solution','Translate needs into clear, testable stories and requirements.'],Deliver:['Build & validate','Prototype, test, and evaluate solutions before release.'],Measure:['Measure value','Track realized outcomes against planned business benefits.'],Optimize:['Optimize outcomes','Use performance insights to improve the next iteration.']};const buttons=[...document.querySelectorAll('.stage')],cards=[...document.querySelectorAll('#tool-grid .project-card')],heading=document.getElementById('stage-heading'),description=document.getElementById('stage-description'),empty=document.getElementById('empty'),reset=document.getElementById('reset');function filter(stage){buttons.forEach(b=>{let active=b.dataset.filter===stage;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))});const matches=cards.filter(c=>stage==='All'||c.dataset.stage===stage);cards.forEach(c=>c.hidden=!matches.includes(c));heading.textContent=descriptions[stage][0];description.textContent=descriptions[stage][1];empty.hidden=matches.length>0;reset.hidden=stage==='All'}buttons.forEach(b=>b.addEventListener('click',()=>filter(b.dataset.filter)));reset.addEventListener('click',()=>filter('All'));
+</script></body></html>
