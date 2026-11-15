@@ -4,7 +4,7 @@
 
 **Product Lifecycle Stage:** Optimize
 
-**[Watch the Workflow Demo](./Email_to_Backlog_Demo.mp4)**
+**[Watch the Workflow Demo](https://nnekaanadu-art.github.io/email-to-backlog-automation/Email_to_Backlog_Demo.mp4)**
 
 ## Overview
 
@@ -12,19 +12,21 @@ Product requests often arrive by email. Transferring each request into a backlog
 
 I built this workflow to let requesters use a dedicated backlog email address while giving the product team a consistent place to review incoming requests in Azure DevOps.
 
+It demonstrates intake design, workflow automation, and backlog triage.
+
 ## The Problem
 
 When email serves as an intake channel, someone has to identify requests, copy the information into a work item, and make it visible for triage. That extra step can delay review or leave requests sitting in an inbox.
 
 ## The Solution
 
-Zapier uses Gmail’s **New Email Matching Search** trigger with the query `subject:Role`. When a new email matches, Zapier creates a **User Story** in Azure DevOps.
+Zapier uses Gmail’s **New Email Matching Search** trigger with the query `subject:Request`. When a new email matches, Zapier creates a **User Story** in Azure DevOps.
 
 ### Key Capabilities
 
 **Keyword-Based Intake**
 
-The keyword `Role` identifies emails that qualify for backlog intake. In the demo, it appears at the start of the subject so the routing rule is easy to see.
+The keyword `Request` identifies emails that qualify for backlog intake. In the demo, it appears at the start of the subject so the routing rule is easy to see.
 
 **Automatic Work Item Creation**
 
@@ -60,7 +62,7 @@ Potential enhancements include duplicate detection, a confirmation email with th
 
 ## Explore the Workflow
 
-**[Watch the Email-to-Backlog Demo](./Email_to_Backlog_Demo.mp4)**
+**[Watch the Email-to-Backlog Demo](https://nnekaanadu-art.github.io/email-to-backlog-automation/Email_to_Backlog_Demo.mp4)**
 
 The 50-second walkthrough follows a fictional callback request from Gmail through Zapier to User Story **#102** in Azure Boards.
 
