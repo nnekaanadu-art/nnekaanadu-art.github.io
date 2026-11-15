@@ -2,7 +2,7 @@
 
 **A Zapier workflow that turns qualifying Gmail messages into Azure DevOps User Stories.**
 
-**Portfolio Section:** Automate the Routine
+**Product Lifecycle Stage:** Optimize
 
 **[Watch the Workflow Demo](./Email_to_Backlog_Demo.mp4)**
 
