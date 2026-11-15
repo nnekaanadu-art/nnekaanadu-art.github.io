@@ -62,6 +62,11 @@ Potential enhancements include duplicate detection, a confirmation email with th
 
 ## Explore the Workflow
 
+
+https://github.com/user-attachments/assets/3edabf10-f936-4736-9c67-0aedd5a171da
+
+
+
 **[Watch the Email-to-Backlog Demo](https://nnekaanadu-art.github.io/email-to-backlog-automation/Email_to_Backlog_Demo.mp4)**
 
 The 50-second walkthrough follows a fictional callback request from Gmail through Zapier to User Story **#102** in Azure Boards.
